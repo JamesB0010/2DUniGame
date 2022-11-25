@@ -287,9 +287,6 @@ public class Player2 : MonoBehaviour
         inputVertical = Input.GetAxisRaw(Vertical);
         inputHorizontal = Input.GetAxis(Horizontal);
 
-        Debug.Log(inputVertical);
-        Debug.Log(inputHorizontal);
-
         if (!GameOn)
         {
             inputVertical = 0;
@@ -648,6 +645,12 @@ public class Player2 : MonoBehaviour
     public void Push(Vector3 pushForce)
     {
         velocity += pushForce;
+    }
+
+    //set the boost gauge to take on the value of val, used by spark obsticle to reset boost
+    public void setBoost(float val)
+    {
+        driftGauge = val;
     }
     #endregion
 

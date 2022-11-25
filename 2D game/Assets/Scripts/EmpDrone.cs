@@ -7,16 +7,16 @@ public class EmpDrone : Obsticle
 
     #region fields
     //the target is the player who is being locked onto it is of type gameObject as player1 and player2 are different classes however they both have a gameObject of type GameObject
-    private GameObject target;
+    protected GameObject target;
 
     //how fast the drone moves
-    private int speed = 5;
+    protected int speed = 5;
 
     //the drone explodes on the second collision with a player as the 1st collision is almoast guarenteeded to happen
-    private int collisionCount = 0;
+    protected int collisionCount = 0;
 
     //how long the emp drone should wait before resetting the player speed
-    private int waitTime = 2;
+    protected int waitTime = 2;
 
     //the different sprites used for the drone
     public Sprite angryDrone;
@@ -33,7 +33,7 @@ public class EmpDrone : Obsticle
     //this function checks the positions of both players relative to the drone
     //once one of the players gets too close the drone will lock on to that player setting it as the target 
     //the drone should not be able to lock on if the race hasnt started yet
-    private void findTarget()
+    protected void findTarget()
     {
         for (int i = 0; i < 2; i++)
         {
@@ -58,7 +58,7 @@ public class EmpDrone : Obsticle
 
     //once a target has been aquired the drone will move towards it at a constant speed
     //if the target gets far enough away from the drone it will no longer follow the target
-    private void trackTarget()
+    protected void trackTarget()
     {
         //if the game is over stop chasing the players
         if (player1.GameOn == false)
@@ -96,7 +96,7 @@ public class EmpDrone : Obsticle
     }
 
     //the deliver payload function is triggered after the second collision with the player. It zeros the player speed and stops them, after a certain number of seconds the SustainPayload function resets the players speed
-    private void deliverPayload()
+    protected void deliverPayload()
     {
         //check if this is player 1 or player2
         GetComponent<ParticleSystem>().Play();

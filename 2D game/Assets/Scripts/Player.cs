@@ -647,6 +647,12 @@ public class Player : MonoBehaviour
     {
         velocity += pushForce;
     }
+
+    //set the boost gauge to take on the value of val, used by spark obsticle to reset boost
+    public void setBoost(float val)
+    {
+        driftGauge = val;
+    }
     #endregion
 
 }
