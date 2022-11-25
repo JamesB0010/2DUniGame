@@ -287,6 +287,9 @@ public class Player2 : MonoBehaviour
         inputVertical = Input.GetAxisRaw(Vertical);
         inputHorizontal = Input.GetAxis(Horizontal);
 
+        Debug.Log(inputVertical);
+        Debug.Log(inputHorizontal);
+
         if (!GameOn)
         {
             inputVertical = 0;
@@ -639,6 +642,12 @@ public class Player2 : MonoBehaviour
     {
         velocity = new Vector3();
         acceleration = new Vector3();
+    }
+
+    //adds a velocity to the players velocity, used by the wind turbines to push the player
+    public void Push(Vector3 pushForce)
+    {
+        velocity += pushForce;
     }
     #endregion
 
