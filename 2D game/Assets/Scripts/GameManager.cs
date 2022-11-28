@@ -41,6 +41,13 @@ public class GameManager : MonoBehaviour
     //the max inclusive value used when deciding what drones will spawn
     private int chance = 3;
 
+    //a list of spaark spawns so sparks can be spawned when a new race is generated
+    public List<GameObject> sparkSpawns = new List<GameObject>();
+
+    //a reference to the spark prefab
+    public GameObject sparkPrefab;
+
+
     #endregion
 
     #region setup
@@ -74,6 +81,29 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < spawnPoints.Count; i++)
         {
             Instantiate(empDronePrefab, new Vector3(spawnPoints[i].transform.position.x, spawnPoints[i].transform.position.y, spawnPoints[i].transform.position.z), Quaternion.identity);
+        }
+    }
+
+    //sparks will be spawed in the same as the drones
+    private List<GameObject> generateSpawnpointsSpark()
+    {
+        List<GameObject> spawnPoints = new List<GameObject>();
+        for (int i = 0; i < sparkSpawns.Count; i++)
+        {
+            int randomNumber = Random.Range(1, chance);
+            if (randomNumber == 1)
+            {
+                spawnPoints.Add(sparkSpawns[i]);
+            }
+        }
+        return spawnPoints;
+    }
+
+    private void spawnSparks(List<GameObject> spawnPoints)
+    {
+        for (int i = 0; i < spawnPoints.Count; i++)
+        {
+            Instantiate(sparkPrefab, new Vector3(spawnPoints[i].transform.position.x, spawnPoints[i].transform.position.y, spawnPoints[i].transform.position.z), Quaternion.identity);
         }
     }
 
@@ -240,6 +270,9 @@ public class GameManager : MonoBehaviour
 
         //spawn the drones
         spawnDrones(generateSpawnPointsEmp());
+
+        //spawn the sparks
+        spawnSparks(generateSpawnpointsSpark());
     }
 
     #endregion

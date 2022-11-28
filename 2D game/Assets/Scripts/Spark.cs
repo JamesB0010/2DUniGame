@@ -2,20 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//The spark has a similar but different function to the emp done
+//the difference between the spark and the emp drome is the payload is different.
+//The emp drone stops movement while the spark resets the boost meter.
 public class Spark : EmpDrone
 {
+    #region Private methods
 
-    //the spark will have a very similar behaviour to the emp drone, however it will have a different payload
-
-    // Start is called before the first frame update
+    //call the parent class' start method thereby initialising the player1 and player2 variables
     new void Start()
     {
         base.Start();
     }
 
-    //once a target has been aquired the drone will move towards it at a constant speed
-    //if the target gets far enough away from the drone it will no longer follow the target
-    //this method has been overidden in this class so the sprite renderers sprite is not changed
+    //once a target has been aquired the spark will move towards it at a constant speed
+    //if the target gets far enough away from the spark it will no longer follow the target
+    //this method has been overidden in this class so the sprite is not changed
     private new void trackTarget()
     {
         //if the game is over stop chasing the players
@@ -24,9 +26,11 @@ public class Spark : EmpDrone
             target = null;
             return;
         }
+
+        //otherwise move towards the targwt
         gameObject.transform.position = gameObject.transform.position + ((target.transform.position - gameObject.transform.position).normalized * Time.deltaTime * speed);
 
-
+        //if the player has moved far enough away then stop chasing
         if ((target.transform.position - gameObject.transform.position).magnitude >= 30)
         {
             target = null;
@@ -34,8 +38,10 @@ public class Spark : EmpDrone
         }
     }
 
+    //this allows the boost meter tp drop down to zero gradually instead of being instantly set to zero, the boost meter visually dropping looks more appealing that it instantly dropping to zero
     IEnumerator animateBoostDepleate(Player player)
     {
+        //until the players boost is 0 reduce the boost
        while(player.Boost > 0)
         {
             player1.setBoost(player1.Boost - Time.deltaTime * 150);
@@ -43,6 +49,7 @@ public class Spark : EmpDrone
         }
     }
 
+    //this is an example of polymorphism the same function performes differently depending on what type parameter(s) it recieves this is called static polymorphism
     IEnumerator animateBoostDepleate(Player2 player)
     {
         while (player.Boost > 0)
@@ -52,6 +59,7 @@ public class Spark : EmpDrone
         }
     }
 
+    //deliver the payload (reset the players boost)
     private new void deliverPayload()
     {
         //check if this is player 1 or player2
@@ -94,7 +102,7 @@ public class Spark : EmpDrone
         {
             return;
         }
-        //once the drone has collided with the player for the second time explode
+        //once the spark has collided with the player for the second time deliver the payload
         if (collisionCount == 1)
         {
             deliverPayload();
@@ -102,5 +110,7 @@ public class Spark : EmpDrone
         }
         collisionCount++;
     }
+
+#endregion
 }
 
