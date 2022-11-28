@@ -98,6 +98,8 @@ public class Player : MonoBehaviour
     //holds a reference to the boost meter which updates to graphically show the players boost amount 
     public BoostMeter boostMeter;
 
+    private int boostSpeed = 18;
+
     //fields that have a propertiy associated with them
     //------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -106,7 +108,7 @@ public class Player : MonoBehaviour
 
     //the max speed of the player is by default 9. this is increased when the player activates their boost 
     //the associated property is read only this means nothing else can directly change the players max speed this makes the program more secure
-    private float maxSpeed = 9;
+    private float maxSpeed = 12;
 
     //revs will allow the car to accelerate over time and not move at a constant speed. Additionally revs controls how much influence the acceleration has on the velocity of the player
     //this means that the longer the player accelerates for the more percieved grip they have
@@ -303,17 +305,7 @@ public class Player : MonoBehaviour
 
         //3. Calculate acceleration
         //The longer the player keeps inputting forwards the faster the car goes if they let go the revs drop and the car slows down
-
-        //if the player is boosting increase their revs by a larger amount 
-        if(maxSpeed > 9)
-        {
-            Revs = inputVertical > 0 ? Revs + 0.00003f * Time.deltaTime * 10000 : Revs - 0.1f * Time.deltaTime * 10000;
-        }
-        else
-        {
-            //when the player accelerates normally increase the revs by a normal value if they stop accelerating decrease the revs
             Revs = inputVertical > 0 ? Revs + 0.00003f * Time.deltaTime * 1000 : Revs - 0.1f * Time.deltaTime * 10000;
-        }
         
         //if the player is accelerating increase the roll speed else decrease the roll speed
         RollSpeed = inputVertical > 0 ? RollSpeed + 0.006f * Time.deltaTime * 1000 : RollSpeed - 0.001f * Time.deltaTime * 100;
@@ -327,19 +319,19 @@ public class Player : MonoBehaviour
         //add the forwards direction of the player to the acceleration 
         //you can use transform.up, down left and right to find this https://answers.unity.com/questions/251619/rotation-to-direction-vector.html, https://answers.unity.com/questions/1317241/transformforward-in-2d.html
 
-        acceleration = transform.up * forwardsSpeed * Time.deltaTime * 5000;
+        acceleration = transform.up * forwardsSpeed * Time.deltaTime * 7000;
 
 
         //now we need to find the friction acting sideways to the car
         friction = inputHorizontal / 100;
 
         //create a sideways acceleration vector and then add it to the acceleration
-        Vector3 sidewaysAcceleration = new Vector3(transform.right.x, transform.right.y, transform.right.z) * friction * Time.deltaTime * turnSpeed;
+        Vector3 sidewaysAcceleration = new Vector3(transform.right.x, transform.right.y, transform.right.z) * friction * Time.deltaTime * 2;
 
         acceleration += sidewaysAcceleration;
 
         //reduce the acceleration so that its influence over the velocity isnt too heavy
-        acceleration /= 1000;
+        acceleration /= 800;
 
         //if the game has not started reset the acceleration so the player cant move before the game has started
         if (!GameOn)
@@ -393,7 +385,7 @@ public class Player : MonoBehaviour
         }
 
         //this ensures that the sprite does not change if the player crashes when boosting
-        if (maxSpeed != 15)
+        if (maxSpeed != boostSpeed)
         {
             coPilotUI.GetComponent<Image>().sprite = unhappySprite;
         }
@@ -417,7 +409,7 @@ public class Player : MonoBehaviour
     //this function is used to evaluate if the player is travelling fast enough to drift it returns true or false
     private bool IsDriftSpeed()
     {
-        if(rollSpeed < maxSpeed - 2)
+        if(rollSpeed < maxSpeed - 5)
         {
             return false;
         }
@@ -442,7 +434,7 @@ public class Player : MonoBehaviour
             //player is drifting
             Boost += Time.deltaTime * 10;
             //unless the player is boosting set the copilot image to be the happy sprite
-            if (maxSpeed != 15)
+            if (maxSpeed != boostSpeed)
             {
                 coPilotUI.GetComponent<Image>().sprite = happySprite;
             }
@@ -518,7 +510,7 @@ public class Player : MonoBehaviour
             camShakeFreq = 0;
 
             //reset the max speed and reset the post processing effects 
-            maxSpeed = 9;
+            maxSpeed = 12;
             volume.profile = profileNormal;
 
             //make the animator switch from the boost animation to a different animation
@@ -586,7 +578,7 @@ public class Player : MonoBehaviour
         inputVertical = 1;
 
         //set the max speed to be higher than default
-        maxSpeed = 15;
+        maxSpeed = boostSpeed;
 
         //depleate the drift gauge as the player continues to boost
         //22 was a number which seemed to cause the boost to depleate at a rate i was happy with after play testing
