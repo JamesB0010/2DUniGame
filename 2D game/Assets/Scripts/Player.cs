@@ -409,7 +409,7 @@ public class Player : MonoBehaviour
     //this function is used to evaluate if the player is travelling fast enough to drift it returns true or false
     private bool IsDriftSpeed()
     {
-        if(rollSpeed < maxSpeed - 5)
+        if(rollSpeed < maxSpeed - 9)
         {
             return false;
         }
@@ -643,7 +643,7 @@ public class Player : MonoBehaviour
     //set the boost gauge to take on the value of val, used by spark obsticle to reset boost
     public void setBoost(float val)
     {
-        driftGauge = val;
+        driftGauge = val > 0? val: 0;
     }
     #endregion
 

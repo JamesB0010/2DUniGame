@@ -410,7 +410,7 @@ public class Player2 : MonoBehaviour
     private bool IsDriftSpeed()
     {
         float speed = RollSpeed;
-        if (rollSpeed < maxSpeed - 2)
+        if (rollSpeed < maxSpeed - 9)
         {
             return false;
         }
@@ -643,7 +643,7 @@ public class Player2 : MonoBehaviour
     //set the boost gauge to take on the value of val, used by spark obsticle to reset boost
     public void setBoost(float val)
     {
-        driftGauge = val;
+        driftGauge = val > 0 ? val : 0;
     }
     #endregion
 

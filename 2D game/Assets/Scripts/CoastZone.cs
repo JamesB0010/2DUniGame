@@ -23,7 +23,7 @@ public class CoastZone : Obsticle
             if (player1.Revs > 1)
             {
                 player1.Revs = 1;
-                player2.setBoost(player2.Boost - Time.deltaTime * 20);
+                player1.setBoost(player1.Boost - Time.deltaTime * 20);
             }
         }
         else if (collision.gameObject == player2.gameObject)
