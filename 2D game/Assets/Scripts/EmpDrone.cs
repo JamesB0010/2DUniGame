@@ -33,7 +33,7 @@ public class EmpDrone : Obsticle
     }
 
     //when the game Over event fires handle it using this method
-    private void onGameOver()
+    public void onGameOver()
     {
         Destroy(gameObject);
     }

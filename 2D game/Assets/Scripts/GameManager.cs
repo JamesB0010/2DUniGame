@@ -112,15 +112,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    //before the drones are spawned in all drones must first be removed
-    private void removeAllDrones()
-    {
-        foreach(EmpDrone drone in FindObjectsOfType<EmpDrone>())
-        {
-            Destroy(drone.gameObject);
-        }
-    }
-
     //this hides all of the visual connections between checkpoints
     void invisibleRoutes()
     {
