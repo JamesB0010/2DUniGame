@@ -491,6 +491,10 @@ PrefabInstance:
       value: -0.31353378
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -661,6 +665,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: 0.59664875
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -1314,6 +1322,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: -1.0930729
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -2074,7 +2086,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2485,6 +2496,10 @@ PrefabInstance:
       value: 0.88623285
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -2825,6 +2840,10 @@ PrefabInstance:
       value: 1.3620881
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -2986,6 +3005,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: 1.220901
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -3558,6 +3581,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: 0.44587612
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -4332,6 +4359,10 @@ PrefabInstance:
       value: 1.3574264
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -4645,6 +4676,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: -1.2151184
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -5173,6 +5208,10 @@ PrefabInstance:
       value: -0.1602931
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -5534,6 +5573,10 @@ PrefabInstance:
       value: 1.3486147
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -5726,6 +5769,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: -0.35393333
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -6094,8 +6141,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8853d9433f79f8b459ec9ed8f89cc7a5, type: 2}
+  m_sharedMaterial: {fileID: 2891630896967391165, guid: 8853d9433f79f8b459ec9ed8f89cc7a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6348,6 +6395,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: 0.70752907
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -12691,6 +12742,10 @@ PrefabInstance:
       value: -0.88189507
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -12914,6 +12969,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: -1.2579899
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -13763,6 +13822,10 @@ PrefabInstance:
       value: 1.2460747
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -13924,6 +13987,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: 1.2327099
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -14182,6 +14249,10 @@ PrefabInstance:
       value: 0.45602036
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -14343,6 +14414,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: -0.84184456
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -15429,6 +15504,10 @@ PrefabInstance:
       value: -0.49444962
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -16263,6 +16342,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: 0.7081666
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -17384,6 +17467,10 @@ PrefabInstance:
       value: 1.1163839
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -17675,6 +17762,10 @@ PrefabInstance:
       value: -0.8807144
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -17805,8 +17896,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8853d9433f79f8b459ec9ed8f89cc7a5, type: 2}
+  m_sharedMaterial: {fileID: 2891630896967391165, guid: 8853d9433f79f8b459ec9ed8f89cc7a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18230,6 +18321,10 @@ PrefabInstance:
       value: -1.3588085
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -18578,6 +18673,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: -0.07088947
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -18962,6 +19061,10 @@ PrefabInstance:
       value: -0.70015574
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -19115,6 +19218,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: -0.36587334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -19813,6 +19920,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: 0.3130579
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -20824,6 +20935,10 @@ PrefabInstance:
       value: -0.11745286
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -21097,6 +21212,10 @@ PrefabInstance:
       value: -1.3582649
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -21258,6 +21377,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: -1.0420761
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -21441,15 +21564,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Checkpoint 1/10
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3e3b2e1650b4ce1429d24d71fac315b7, type: 2}
+  m_sharedMaterial: {fileID: -6974304896993104112, guid: 3e3b2e1650b4ce1429d24d71fac315b7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281569025
-  m_fontColor: {r: 0.003921569, g: 0.56078434, b: 0.2, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -22074,6 +22197,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: -0.74254227
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -23067,6 +23194,10 @@ PrefabInstance:
       value: 0.40536803
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -23228,6 +23359,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: 0.7634177
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -23634,6 +23769,10 @@ PrefabInstance:
       value: -0.5215939
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -23944,6 +24083,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: -0.049033165
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -24307,6 +24450,10 @@ PrefabInstance:
       value: 1.1278054
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -24468,6 +24615,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: 0.47132635
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -24767,6 +24918,10 @@ PrefabInstance:
       value: 0.7159381
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -25031,8 +25186,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Race Over! \n You Win!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8853d9433f79f8b459ec9ed8f89cc7a5, type: 2}
+  m_sharedMaterial: {fileID: 2891630896967391165, guid: 8853d9433f79f8b459ec9ed8f89cc7a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -25426,6 +25581,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.data[2].rightTangent.y
       value: 1.1935339
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
@@ -31262,6 +31421,10 @@ PrefabInstance:
       value: -0.5137396
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -31791,6 +31954,10 @@ PrefabInstance:
     - target: {fileID: 6485685880889019208, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_CornerAngleThreshold
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 6485685880889019209, guid: d0775f4bfcd3ad245967b4cdf5f5fd94, type: 3}
       propertyPath: m_Enabled

@@ -27,15 +27,7 @@ public class EmpDrone : Obsticle
 #region private methods
     private new void Start()
     {
-        //subscibe to the GameOver event
-        FindObjectOfType<GameManager>().GameOver += onGameOver;
         base.Start();
-    }
-
-    //when the game Over event fires handle it using this method
-    public void onGameOver()
-    {
-        Destroy(gameObject);
     }
 
     //this function checks the positions of both players relative to the drone

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 29cd91306cb2d8446aaa5eb7296a1e98
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Alien Androids
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 444851a7fb7c4bf4e80f5d5d443f8e68, type: 3}
+  - {fileID: 12800000, guid: f8c7285a4e6e5a6418ac34d95b99e973, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

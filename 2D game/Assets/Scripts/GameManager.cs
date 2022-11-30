@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//https://www.tutorialsteacher.com/csharp/csharp-event
-public delegate void gameOver();
 
 public class GameManager : MonoBehaviour
 {
@@ -48,9 +46,6 @@ public class GameManager : MonoBehaviour
 
     //a reference to the spark prefab
     public GameObject sparkPrefab;
-
-    //the event for the game over delagate when the game is over the GameOver event will trigger and its subscribers will be notified
-    public event gameOver GameOver;
 
 
     #endregion
@@ -277,9 +272,8 @@ public class GameManager : MonoBehaviour
     //The NewRace method is public meaning it can be called when the replay button is pressed 
     public void NewRace()
     {
-        GameOver?.Invoke();
-        //the method calls the private newRace method which can only be accessed by the GameManager
-        newRace();
+        //reload the scene
+        Application.LoadLevel("Main Game");
     }
 
     //this method is called by the checkpoints when a player collides with them, it is up to this method to validate and act on these collisions

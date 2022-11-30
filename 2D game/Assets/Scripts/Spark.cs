@@ -12,16 +12,9 @@ public class Spark : EmpDrone
     //call the parent class' start method thereby initialising the player1 and player2 variables
     new void Start()
     {
-        //subscribing to the GameOver event
-        FindObjectOfType<GameManager>().GameOver += onGameOver;
         base.Start();
     }
 
-    //event handler for when a new game commences
-    public new void onGameOver()
-    {
-        Destroy(gameObject);
-    }
 
     //once a target has been aquired the spark will move towards it at a constant speed
     //if the target gets far enough away from the spark it will no longer follow the target
