@@ -845,8 +845,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8669ca2ce7acb404bbbe882b651334c0, type: 2}
+  m_sharedMaterial: {fileID: 2891630896967391165, guid: 8669ca2ce7acb404bbbe882b651334c0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3967,15 +3967,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Checkpoint 1/10
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3e3b2e1650b4ce1429d24d71fac315b7, type: 2}
+  m_sharedMaterial: {fileID: -6974304896993104112, guid: 3e3b2e1650b4ce1429d24d71fac315b7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281569025
-  m_fontColor: {r: 0.003921569, g: 0.56078434, b: 0.2, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6141,8 +6141,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8853d9433f79f8b459ec9ed8f89cc7a5, type: 2}
-  m_sharedMaterial: {fileID: 2891630896967391165, guid: 8853d9433f79f8b459ec9ed8f89cc7a5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8669ca2ce7acb404bbbe882b651334c0, type: 2}
+  m_sharedMaterial: {fileID: 2891630896967391165, guid: 8669ca2ce7acb404bbbe882b651334c0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12518,8 +12518,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Race Over! \n You Win!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8669ca2ce7acb404bbbe882b651334c0, type: 2}
+  m_sharedMaterial: {fileID: 2891630896967391165, guid: 8669ca2ce7acb404bbbe882b651334c0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15143,15 +15143,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8669ca2ce7acb404bbbe882b651334c0, type: 2}
+  m_sharedMaterial: {fileID: 2891630896967391165, guid: 8669ca2ce7acb404bbbe882b651334c0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281569025
-  m_fontColor: {r: 0.003921569, g: 0.56078434, b: 0.20000002, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -17896,15 +17896,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8853d9433f79f8b459ec9ed8f89cc7a5, type: 2}
-  m_sharedMaterial: {fileID: 2891630896967391165, guid: 8853d9433f79f8b459ec9ed8f89cc7a5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8669ca2ce7acb404bbbe882b651334c0, type: 2}
+  m_sharedMaterial: {fileID: 2891630896967391165, guid: 8669ca2ce7acb404bbbe882b651334c0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281569025
-  m_fontColor: {r: 0.003921569, g: 0.56078434, b: 0.20000002, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -25186,8 +25186,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Race Over! \n You Win!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8853d9433f79f8b459ec9ed8f89cc7a5, type: 2}
-  m_sharedMaterial: {fileID: 2891630896967391165, guid: 8853d9433f79f8b459ec9ed8f89cc7a5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8669ca2ce7acb404bbbe882b651334c0, type: 2}
+  m_sharedMaterial: {fileID: 2891630896967391165, guid: 8669ca2ce7acb404bbbe882b651334c0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
