@@ -102,20 +102,15 @@ public class Hud : MonoBehaviour
         replayButton.GetComponent<Button>().enabled = false;
         //credit for how to get a child object https://stackoverflow.com/questions/40752083/how-to-find-child-of-a-gameobject-or-the-script-attached-to-child-gameobject-via#:~:text=Finding%20child%20GameObject%20by%20index%3A&text=transform.,3%2C%20to%20the%20GetChild%20function.
         replayButton.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().enabled = false;
+
+        //start tracking time and updating the ui
+        StartCoroutine("trackTime");
     }
     #endregion
 
     #region private methods
     void Update()
     {
-        //format the elapsed time since the start of the race to be 00:00
-        // https://answers.unity.com/questions/45676/making-a-timer-0000-minutes-and-seconds.html
-        float raceTime = Time.time - lastRaceTimes;
-        string minuets = (int)raceTime / 60 < 10? "0" + ((int)raceTime / 60).ToString(): ((int)raceTime).ToString();
-        string seconds = (int)raceTime % 60 < 10? "0" + ((int)raceTime % 60).ToString(): ((int)raceTime % 60).ToString();
-        textMesh.text = minuets + ":" + seconds;
-
-
         //animate the speedometer
         float rollSpeed = 0;
 
@@ -263,5 +258,20 @@ public class Hud : MonoBehaviour
         replayButton.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().enabled = false;
     }
 
+    //this function tracks the time however it waits 6 seconds before tracing the time as the countdown at the start of the game is 6 seconds long
+    public IEnumerator trackTime()
+    {
+        yield return new WaitForSeconds(6);
+        while (1 == 1)
+        {
+            //format the elapsed time since the start of the race to be 00:00
+            // https://answers.unity.com/questions/45676/making-a-timer-0000-minutes-and-seconds.html
+            float raceTime = Time.time - lastRaceTimes - 5;
+            string minuets = (int)raceTime / 60 < 10 ? "0" + ((int)raceTime / 60).ToString() : ((int)raceTime).ToString();
+            string seconds = (int)raceTime % 60 < 10 ? "0" + ((int)raceTime % 60).ToString() : ((int)raceTime % 60).ToString();
+            textMesh.text = minuets + ":" + seconds;
+            yield return null;
+        }
+    }
     #endregion
 }

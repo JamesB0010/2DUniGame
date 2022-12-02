@@ -644,6 +644,10 @@ public class Player2 : MonoBehaviour
     public void setBoost(float val)
     {
         driftGauge = val > 0 ? val : 0;
+        if (driftGauge < 100)
+        {
+            minBoostMet = false;
+        }
     }
     #endregion
 
