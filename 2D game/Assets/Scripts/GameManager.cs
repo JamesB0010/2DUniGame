@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
 {
     #region fields
 
+    public delegate void onRaceOver();
+    public event onRaceOver OnRaceOver;
+
     private static int checkpointPerRace = 10;
 
     //the raceRoute is an array of length checkpointperRace containing all of the checkpoints in a race. it is reset everytime a new race is generated
@@ -313,6 +316,7 @@ public class GameManager : MonoBehaviour
                         gameOn = false;
                         FindObjectOfType<Player>().GameOn = gameOn;
                         FindObjectOfType<Player2>().GameOn = gameOn;
+                        OnRaceOver();
                         return;
                     }
 

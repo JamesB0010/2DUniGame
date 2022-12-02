@@ -29,9 +29,6 @@ public class Hud : MonoBehaviour
     public GameObject countDownText;
     private TextMeshProUGUI countDownTextMesh;
 
-    //the replay button which is pressed after each race to play again 
-    public GameObject replayButton;
-
     //stores the sum of the times of all the last races
     //this means each race the time starts at 0
     private float lastRaceTimes;
@@ -98,10 +95,7 @@ public class Hud : MonoBehaviour
 
         //by default the hud elements assosiated with the end of a race are set to be invisable 
         gameOverTextMesh.enabled = false;
-        replayButton.GetComponent<Image>().enabled = false;
-        replayButton.GetComponent<Button>().enabled = false;
         //credit for how to get a child object https://stackoverflow.com/questions/40752083/how-to-find-child-of-a-gameobject-or-the-script-attached-to-child-gameobject-via#:~:text=Finding%20child%20GameObject%20by%20index%3A&text=transform.,3%2C%20to%20the%20GetChild%20function.
-        replayButton.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().enabled = false;
 
         //start tracking time and updating the ui
         StartCoroutine("trackTime");
@@ -206,9 +200,6 @@ public class Hud : MonoBehaviour
 
         //enable the appropriate visual elements
         gameOverTextMesh.enabled = true;
-        replayButton.GetComponent<Image>().enabled = true;
-        replayButton.GetComponent<Button>().enabled = true;
-        replayButton.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().enabled = true;
     }
 
     //sets the countdown textMesh to a number
@@ -230,15 +221,6 @@ public class Hud : MonoBehaviour
         
     }
 
-    //if any of the players has clicked the replay button call this method
-    //this method tells the game manager to start a new race and prevents the players from moving when they are teleported to the next start position by stopping their velocity and acceleration
-    public void ReplayClicked()
-    {
-        FindObjectOfType<GameManager>().NewRace();
-        FindObjectOfType<Player>().Stop();
-        FindObjectOfType<Player2>().Stop();
-    }
-
     //when a race is started the hud elements associated with the end of the race are hidden
     public void disableReplayElements()
     {
@@ -252,10 +234,6 @@ public class Hud : MonoBehaviour
             //disable the text
             gameOverTextMesh.enabled = false;
         }
-        //disable any other elements which need to be hidden
-        replayButton.GetComponent<Image>().enabled = false;
-        replayButton.GetComponent<Button>().enabled = false;
-        replayButton.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().enabled = false;
     }
 
     //this function tracks the time however it waits 6 seconds before tracing the time as the countdown at the start of the game is 6 seconds long
