@@ -4,6 +4,7 @@ using UnityEngine;
 using Cinemachine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
+using System;
 
 public class Player : MonoBehaviour
 {
@@ -99,6 +100,7 @@ public class Player : MonoBehaviour
     public BoostMeter boostMeter;
 
     private int boostSpeed = 18;
+
 
     //fields that have a propertiy associated with them
     //------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -261,6 +263,7 @@ public class Player : MonoBehaviour
         //do the same for the boost meter
         boostMeter.player = gameObject;
         boostMeter.playerName = gameObject.name;
+        
     }
 
     #endregion
