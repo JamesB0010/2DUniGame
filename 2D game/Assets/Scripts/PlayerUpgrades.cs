@@ -11,8 +11,14 @@ public class PlayerUpgrades : MonoBehaviour
     {
         insulatedElectrics,
         sealedCircuits,
-        planted
+        planted,
+        Radio
     }
+
+    private GameObject instance;
+
+
+    private List<Upgrade> valid = new List<Upgrade>();
 
     //holds all the upgrades
     private Upgrade[] upgradeList = new Upgrade[]
@@ -30,8 +36,28 @@ public class PlayerUpgrades : MonoBehaviour
         new Upgrade("Planted", "Immune to wind turbines", delegate
         {
             Planted();
+        }),
+
+        new Upgrade("Radio", "Gain boost when advancing checkpoints", delegate
+        {
+            Radio();
+        }),
+
+        new Upgrade("Combustion engine", "Immune to Coast zones", delegate
+        {
+            ComEngi();
         })
     };
+
+    public List<Upgrade> deck = new List<Upgrade>();
+
+    public Upgrade randomUpgrade()
+    {
+        int number = Random.Range(0, valid.Count);
+        Upgrade upgrade = valid[number];
+        valid.RemoveAt(number);
+        return upgrade;
+    }
 
     //holds the equipped upgrades
     private List<Upgrade> upgrades = new List<Upgrade>();
@@ -62,8 +88,30 @@ public class PlayerUpgrades : MonoBehaviour
         Debug.Log("planted");
     }
 
+    private static void Radio()
+    {
+        Debug.Log("Radio");
+    }
+
+    private static void ComEngi()
+    {
+        Debug.Log("Combustion engine");
+    }
+
     private void Start()
     {
+        if (instance == null)
+        {
+            instance = gameObject;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        for (int i = 0; i < upgradeList.Length; i++)
+        {
+            valid.Add(upgradeList[i]);
+        }
         if (upgrades.Count > 0)
         {
             for (int i = 0; i < upgrades.Count; i++)
@@ -71,6 +119,11 @@ public class PlayerUpgrades : MonoBehaviour
                 upgrades[i].setup();
             }
         }
+    }
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
     }
 
 }

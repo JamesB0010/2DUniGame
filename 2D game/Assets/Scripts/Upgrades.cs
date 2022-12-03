@@ -17,6 +17,16 @@ public class Upgrade
         this.setup = setupFunction;
     }
 
+    public string Name
+    {
+        get { return name; }
+    }
+
+    public string Description
+    {
+        get { return description; }
+    }
+
 }
 
 
