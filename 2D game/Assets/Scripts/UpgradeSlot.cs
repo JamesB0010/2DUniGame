@@ -9,14 +9,14 @@ public class UpgradeSlot : MonoBehaviour, IPointerClickHandler
     [SerializeField]
     private GameObject popUpWindow;
 
-    public delegate void UpgradeClick();
+    public delegate void UpgradeClick(GameObject sender);
     public event UpgradeClick upgradeClick;
 
     public void OnPointerClick(PointerEventData eventData)
     {
         popUpWindow.GetComponent<Image>().enabled = true;
         floodHideShow(popUpWindow, true);
-        upgradeClick();
+        upgradeClick(gameObject);
     }
 
     public void floodHideShow(GameObject root, bool show)

@@ -38,8 +38,12 @@ public class EquipUpgradesUi : MonoBehaviour
         gameObject.GetComponent<Canvas>().enabled = true;
     }
 
-    public void upgradeClickHandler()
+    public void upgradeClickHandler(GameObject sender)
     {
+        if (((sender.name == "Player1 Slot 1" || sender.name == "Player 1 Slot 2" || sender.name == "Player 1 Slot 3") && playerLink != "player1") || (sender.name == "Player2 Slot 1" || sender.name == "Player2 Slot 2" || sender.name == "Player2 Slot 3") && playerLink != "player2")
+        {
+            return;
+        }
         //clear deck and redraw
         for (int i = 0; i < deckSlots.Length; i ++){
             deckSlots[i].GetComponent<Image>().enabled = false;
