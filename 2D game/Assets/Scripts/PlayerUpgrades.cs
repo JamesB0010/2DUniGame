@@ -15,8 +15,6 @@ public class PlayerUpgrades : MonoBehaviour
         Radio
     }
 
-    private GameObject instance;
-
 
     private List<Upgrade> valid = new List<Upgrade>();
 
@@ -115,14 +113,6 @@ public class PlayerUpgrades : MonoBehaviour
 
     private void Start()
     {
-        if (instance == null)
-        {
-            instance = gameObject;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
         for (int i = 0; i < upgradeList.Length; i++)
         {
             valid.Add(upgradeList[i]);
@@ -134,11 +124,28 @@ public class PlayerUpgrades : MonoBehaviour
                 upgrades[i].setup();
             }
         }
+
+        loadData();
     }
 
-    private void Awake()
+    public List<Upgrade> getValid()
     {
-        DontDestroyOnLoad(gameObject);
+        return valid;
+    }
+
+    public List<Upgrade> getDeck()
+    {
+        return deck;
+    }
+
+    public List<Upgrade> getUpgrades()
+    {
+        return upgrades;
+    }
+
+    private void loadData()
+    {
+        FindObjectOfType<UpgradeSaver>().loadData(gameObject.tag);
     }
 
 }
