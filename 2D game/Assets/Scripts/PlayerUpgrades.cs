@@ -62,6 +62,21 @@ public class PlayerUpgrades : MonoBehaviour
     //holds the equipped upgrades
     private List<Upgrade> upgrades = new List<Upgrade>();
 
+   public Upgrade getUpgrade(int index)
+    {
+        return upgrades[index];
+    }
+
+    public void addUpgrade(int deckIndex)
+    {
+        upgrades.Add(deck[deckIndex]);
+    }
+
+    public int getUpgradesLength()
+    {
+        return upgrades.Count;
+    }
+
     public void addUpgrade(upgradeMap upgradeName)
     {
         if (upgrades.Count == 3)

@@ -10,6 +10,11 @@ public class EquipUpgradesUi : MonoBehaviour
     private string playerLink;
     [SerializeField]
     private GameObject[] deckSlots;
+
+    [SerializeField]
+    private TextMeshProUGUI upgradeSlot1Text, upgradeSlot2Text, upgradeSlot3Text;
+
+    private int upgradeSlotSelected = -1;
     void Start()
     {
         foreach (UpgradeSlot slot in FindObjectsOfType<UpgradeSlot>())
@@ -33,6 +38,33 @@ public class EquipUpgradesUi : MonoBehaviour
         
     }
 
+    public void updateupgradeSlot(string upgradeName, string playerID)
+    {
+        if (playerID != playerLink)
+        {
+            return;
+        }
+            switch (upgradeSlotSelected)
+            {
+                case 0:
+                    //update 0's text
+                    upgradeSlot1Text.text = upgradeName;
+                    break;
+                case 1:
+                //update 1's text
+                upgradeSlot2Text.text = upgradeName;
+                    break;
+                case 2:
+                //update 2's text
+                upgradeSlot3Text.text = upgradeName;
+                    break;
+                default:
+                    //do nothing
+                    break;
+
+            }
+    }
+
     public void Show()
     {
         gameObject.GetComponent<Canvas>().enabled = true;
@@ -44,6 +76,9 @@ public class EquipUpgradesUi : MonoBehaviour
         {
             return;
         }
+
+        upgradeSlotSelected = sender.name[sender.name.Length - 1] - 49;
+
         //clear deck and redraw
         for (int i = 0; i < deckSlots.Length; i ++){
             deckSlots[i].GetComponent<Image>().enabled = false;

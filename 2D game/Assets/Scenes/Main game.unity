@@ -2358,6 +2358,9 @@ MonoBehaviour:
   - {fileID: 1386150673}
   - {fileID: 1560322732}
   - {fileID: 729324959}
+  upgradeSlot1Text: {fileID: 1204659174}
+  upgradeSlot2Text: {fileID: 1982342041}
+  upgradeSlot3Text: {fileID: 819080427}
 --- !u!114 &169379906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4714,8 +4717,8 @@ GameObject:
   - component: {fileID: 333878207}
   - component: {fileID: 333878206}
   m_Layer: 5
-  m_Name: Image (3)
-  m_TagString: Untagged
+  m_Name: 0
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4754,6 +4757,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 1406315969}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!114 &333878207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5173,7 +5178,7 @@ GameObject:
   - component: {fileID: 371873335}
   m_Layer: 5
   m_Name: Text (TMP) (1)
-  m_TagString: Untagged
+  m_TagString: EquipSlotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5771,8 +5776,8 @@ GameObject:
   - component: {fileID: 429893014}
   - component: {fileID: 429893013}
   m_Layer: 5
-  m_Name: Image (5)
-  m_TagString: Untagged
+  m_Name: 2
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5811,6 +5816,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 1406315969}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!114 &429893014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8048,7 +8055,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565353481}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 519420031}
@@ -8154,8 +8161,8 @@ GameObject:
   - component: {fileID: 573567893}
   - component: {fileID: 573567895}
   m_Layer: 5
-  m_Name: Image (5)
-  m_TagString: Untagged
+  m_Name: 2
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8232,6 +8239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 86247405}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!1 &575650315
 GameObject:
   m_ObjectHideFlags: 0
@@ -14755,8 +14764,8 @@ GameObject:
   - component: {fileID: 694593571}
   - component: {fileID: 694593570}
   m_Layer: 5
-  m_Name: Image (6)
-  m_TagString: Untagged
+  m_Name: 3
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14795,6 +14804,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 1406315969}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!114 &694593571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15295,8 +15306,8 @@ GameObject:
   - component: {fileID: 729324962}
   - component: {fileID: 729324961}
   m_Layer: 5
-  m_Name: Image (10)
-  m_TagString: Untagged
+  m_Name: 6
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15335,6 +15346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 1406315969}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!114 &729324962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16059,8 +16072,8 @@ GameObject:
   - component: {fileID: 783779911}
   - component: {fileID: 783779913}
   m_Layer: 5
-  m_Name: Image (4)
-  m_TagString: Untagged
+  m_Name: 1
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16137,6 +16150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 86247405}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!1 &791586312
 GameObject:
   m_ObjectHideFlags: 0
@@ -16150,8 +16165,8 @@ GameObject:
   - component: {fileID: 791586315}
   - component: {fileID: 791586314}
   m_Layer: 5
-  m_Name: Image (4)
-  m_TagString: Untagged
+  m_Name: 1
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16190,6 +16205,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 1406315969}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!114 &791586315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16761,7 +16778,7 @@ GameObject:
   - component: {fileID: 819080427}
   m_Layer: 5
   m_Name: Text (TMP) (2)
-  m_TagString: Untagged
+  m_TagString: EquipSlotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19103,8 +19120,8 @@ GameObject:
   - component: {fileID: 911758456}
   - component: {fileID: 911758458}
   m_Layer: 5
-  m_Name: Image (8)
-  m_TagString: Untagged
+  m_Name: 5
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19181,6 +19198,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 86247405}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!1 &919569311
 GameObject:
   m_ObjectHideFlags: 0
@@ -20137,7 +20156,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984222776}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 519420031}
@@ -21008,8 +21027,8 @@ GameObject:
   - component: {fileID: 1053525350}
   - component: {fileID: 1053525352}
   m_Layer: 5
-  m_Name: Image (10)
-  m_TagString: Untagged
+  m_Name: 6
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21086,6 +21105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 86247405}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!1 &1071477245
 GameObject:
   m_ObjectHideFlags: 0
@@ -21638,7 +21659,7 @@ GameObject:
   - component: {fileID: 1122409303}
   m_Layer: 5
   m_Name: Text (TMP) (2)
-  m_TagString: Untagged
+  m_TagString: EquipSlotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22677,7 +22698,7 @@ GameObject:
   - component: {fileID: 1184933408}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: EquipSlotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23207,7 +23228,7 @@ GameObject:
   - component: {fileID: 1204659174}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: EquipSlotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25686,8 +25707,8 @@ GameObject:
   - component: {fileID: 1386150676}
   - component: {fileID: 1386150675}
   m_Layer: 5
-  m_Name: Image (7)
-  m_TagString: Untagged
+  m_Name: 4
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25726,6 +25747,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 1406315969}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!114 &1386150676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25959,8 +25982,8 @@ GameObject:
   - component: {fileID: 1396126656}
   - component: {fileID: 1396126658}
   m_Layer: 5
-  m_Name: Image (6)
-  m_TagString: Untagged
+  m_Name: 3
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26037,6 +26060,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 86247405}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!1 &1406303153
 GameObject:
   m_ObjectHideFlags: 0
@@ -28416,8 +28441,8 @@ GameObject:
   - component: {fileID: 1560322735}
   - component: {fileID: 1560322734}
   m_Layer: 5
-  m_Name: Image (8)
-  m_TagString: Untagged
+  m_Name: 5
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28456,6 +28481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 1406315969}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!114 &1560322735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31420,8 +31447,8 @@ GameObject:
   - component: {fileID: 1723729257}
   - component: {fileID: 1723729259}
   m_Layer: 5
-  m_Name: Image (7)
-  m_TagString: Untagged
+  m_Name: 4
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31498,6 +31525,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 86247405}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!4 &1724743480 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2047745562336892185, guid: 37c64c39641ad9c41a79860607fe7434, type: 3}
@@ -31983,8 +32012,8 @@ GameObject:
   - component: {fileID: 1771067754}
   - component: {fileID: 1771067756}
   m_Layer: 5
-  m_Name: Image (3)
-  m_TagString: Untagged
+  m_Name: 0
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32061,6 +32090,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backPannel: {fileID: 86247405}
+  equipUpgradesPlayer1: {fileID: 1984728192}
+  equipUpgradesPlayer2: {fileID: 169379905}
 --- !u!4 &1782288640 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2047745562336892185, guid: 37c64c39641ad9c41a79860607fe7434, type: 3}
@@ -34515,7 +34546,7 @@ GameObject:
   - component: {fileID: 1982342041}
   m_Layer: 5
   m_Name: Text (TMP) (1)
-  m_TagString: Untagged
+  m_TagString: EquipSlotText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34704,7 +34735,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984728187}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 519420031}
@@ -34760,6 +34791,9 @@ MonoBehaviour:
   - {fileID: 1723729254}
   - {fileID: 911758453}
   - {fileID: 1053525347}
+  upgradeSlot1Text: {fileID: 1184933408}
+  upgradeSlot2Text: {fileID: 371873335}
+  upgradeSlot3Text: {fileID: 1122409303}
 --- !u!4 &1986294262 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5686456546150943148, guid: 184316d6323b0564b93adebee635c588, type: 3}
