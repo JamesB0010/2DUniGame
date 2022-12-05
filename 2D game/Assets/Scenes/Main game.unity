@@ -1111,8 +1111,8 @@ RectTransform:
   - {fileID: 573567891}
   - {fileID: 1396126654}
   - {fileID: 1723729255}
-  - {fileID: 911758454}
   - {fileID: 1053525348}
+  - {fileID: 911758454}
   m_Father: {fileID: 1984728191}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15350,7 +15350,7 @@ GameObject:
   - component: {fileID: 729324962}
   - component: {fileID: 729324961}
   m_Layer: 5
-  m_Name: 6
+  m_Name: 5
   m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15370,7 +15370,7 @@ RectTransform:
   m_Children:
   - {fileID: 931852779}
   m_Father: {fileID: 1406315970}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19164,7 +19164,7 @@ GameObject:
   - component: {fileID: 911758456}
   - component: {fileID: 911758458}
   m_Layer: 5
-  m_Name: 5
+  m_Name: 6
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19184,7 +19184,7 @@ RectTransform:
   m_Children:
   - {fileID: 1496522397}
   m_Father: {fileID: 86247406}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21075,7 +21075,7 @@ GameObject:
   - component: {fileID: 1053525350}
   - component: {fileID: 1053525352}
   m_Layer: 5
-  m_Name: 6
+  m_Name: 5
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21095,7 +21095,7 @@ RectTransform:
   m_Children:
   - {fileID: 921736414}
   m_Father: {fileID: 86247406}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26177,8 +26177,8 @@ RectTransform:
   - {fileID: 429893012}
   - {fileID: 694593569}
   - {fileID: 1386150674}
-  - {fileID: 1560322733}
   - {fileID: 729324960}
+  - {fileID: 1560322733}
   m_Father: {fileID: 169379904}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28520,7 +28520,7 @@ GameObject:
   - component: {fileID: 1560322735}
   - component: {fileID: 1560322734}
   m_Layer: 5
-  m_Name: 5
+  m_Name: 6
   m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28540,7 +28540,7 @@ RectTransform:
   m_Children:
   - {fileID: 484961856}
   m_Father: {fileID: 1406315970}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

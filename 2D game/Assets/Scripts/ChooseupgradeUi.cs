@@ -95,8 +95,7 @@ public class ChooseupgradeUi : MonoBehaviour
         //remove the selection from player 1 and player 2's valid list
         FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().removeNameFromValidList(FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().deck[player1Selection].Name);
         FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().removeNameFromValidList(FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().deck[player2Selection].Name);
-        FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().removeNameFromValidList(FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().deck[player1Selection].Name);
-        FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().removeNameFromValidList(FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().deck[player2Selection].Name);
+
     }
 
     private void setCardText()
