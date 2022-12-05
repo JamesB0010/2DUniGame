@@ -30,12 +30,7 @@ public class EquipUpgradesUi : MonoBehaviour
         {
             playerLink = "player1";
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void updateupgradeSlot(string upgradeName, string playerID)
@@ -68,6 +63,47 @@ public class EquipUpgradesUi : MonoBehaviour
     public void Show()
     {
         gameObject.GetComponent<Canvas>().enabled = true;
+
+        if (playerLink == "player1")
+        {
+            switch (FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().getUpgrades().Count)
+            {
+                case 1:
+                    upgradeSlot1Text.text = FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().getUpgrades()[0].Name;
+                    break;
+                case 2:
+                    upgradeSlot1Text.text = FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().getUpgrades()[0].Name;
+                    upgradeSlot1Text.text = FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().getUpgrades()[1].Name;
+                    break;
+                case 3:
+                    upgradeSlot1Text.text = FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().getUpgrades()[0].Name;
+                    upgradeSlot1Text.text = FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().getUpgrades()[1].Name;
+                    upgradeSlot1Text.text = FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().getUpgrades()[2].Name;
+                    break;
+                default:
+                    break;
+            }
+        }
+        else if (playerLink == "player2")
+        {
+            switch (FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().getUpgrades().Count)
+            {
+                case 1:
+                    upgradeSlot1Text.text = FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().getUpgrades()[0].Name;
+                    break;
+                case 2:
+                    upgradeSlot1Text.text = FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().getUpgrades()[0].Name;
+                    upgradeSlot1Text.text = FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().getUpgrades()[1].Name;
+                    break;
+                case 3:
+                    upgradeSlot1Text.text = FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().getUpgrades()[0].Name;
+                    upgradeSlot1Text.text = FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().getUpgrades()[1].Name;
+                    upgradeSlot1Text.text = FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().getUpgrades()[2].Name;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
     public void upgradeClickHandler(GameObject sender)

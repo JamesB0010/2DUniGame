@@ -19,6 +19,10 @@ public class ChooseupgradeUi : MonoBehaviour
     [SerializeField]
     GameObject[] cardTexts;
 
+    [SerializeField]
+    //the parent game object for the upgrade cards this allows cards to be enabled / disabled depending on how many upgrades the player has to choose from
+    private GameObject[] cardGOs;
+
     private Upgrade[] cards = new Upgrade[3];
 
     //the red and blue boxes
@@ -46,10 +50,11 @@ public class ChooseupgradeUi : MonoBehaviour
         yield return null;
         for (int i = 0; i < 3; i++)
         {
-            cards[i] = FindObjectOfType<PlayerUpgrades>().randomUpgrade();
-        }
-        for (int i = 0; i < 3; i++)
-        {
+            Upgrade card = FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().randomUpgrade();
+            if (card != null)
+            {
+                cards[i] = card;
+            }
         }
         setCardText();
     }
@@ -86,15 +91,37 @@ public class ChooseupgradeUi : MonoBehaviour
         //add the players selections to their decks
         FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().deck.Add(cards[player1Selection]);
         FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().deck.Add(cards[player2Selection]);
+
+        //remove the selection from player 1 and player 2's valid list
+        FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().removeNameFromValidList(FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().deck[player1Selection].Name);
+        FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().removeNameFromValidList(FindObjectOfType<Player>().GetComponent<PlayerUpgrades>().deck[player2Selection].Name);
+        FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().removeNameFromValidList(FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().deck[player1Selection].Name);
+        FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().removeNameFromValidList(FindObjectOfType<Player2>().GetComponent<PlayerUpgrades>().deck[player2Selection].Name);
     }
 
     private void setCardText()
     {
-        for(int i = 0; i < cardTexts.Length; i = i + 2)
+        //Debug.Log(cards.Length);
+        for (int i = 0; i < cardTexts.Length; i = i + 2)
         {
-            cardTexts[i].GetComponent<TextMeshProUGUI>().text = cards[i / 2].Name;
-            cardTexts[i + 1].GetComponent<TextMeshProUGUI>().text = cards[i / 2].Description;
+            cardTexts[i].GetComponent<TextMeshProUGUI>().enabled = false;
+            cardTexts[i + 1].GetComponent<TextMeshProUGUI>().enabled = false;
+
+            // set active method got from api https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
+            cardGOs[i / 2].gameObject.SetActive(false);
+
+            if (cards[i / 2] != null)
+            {
+                cardTexts[i].GetComponent<TextMeshProUGUI>().text = cards[i / 2].Name;
+                cardTexts[i + 1].GetComponent<TextMeshProUGUI>().text = cards[i / 2].Description;
+
+                cardTexts[i].GetComponent<TextMeshProUGUI>().enabled = true;
+                cardTexts[i + 1].GetComponent<TextMeshProUGUI>().enabled = true;
+
+                cardGOs[i / 2].SetActive(true);
+            }
         }
+
     }
 
     public void playerSelection(int cardNumber)
@@ -102,42 +129,36 @@ public class ChooseupgradeUi : MonoBehaviour
         switch (cardNumber)
         {
             case 0:
-                Debug.Log("Card1 player 1");
                 currentActiveVisualCardP1.enabled = false;
                 visualPlayerSelectors[(int)redBlueCards.card1Player1].GetComponent<Image>().enabled = true;
                 currentActiveVisualCardP1 = visualPlayerSelectors[(int)redBlueCards.card1Player1].GetComponent<Image>();
                 player1Selection = 0;
                 break;
             case 1:
-                Debug.Log("Card1 Player 2");
                 currentActiveVisualCardP2.enabled = false;
                 visualPlayerSelectors[(int)redBlueCards.card1Player2].GetComponent<Image>().enabled = true;
                 currentActiveVisualCardP2 = visualPlayerSelectors[(int)redBlueCards.card1Player2].GetComponent<Image>();
                 player2Selection = 0;
                 break;
             case 2:
-                Debug.Log("Card2 Player 1");
                 currentActiveVisualCardP1.enabled = false;
                 visualPlayerSelectors[(int)redBlueCards.card2Player1].GetComponent<Image>().enabled = true;
                 currentActiveVisualCardP1 = visualPlayerSelectors[(int)redBlueCards.card2Player1].GetComponent<Image>();
                 player1Selection =1;
                 break;
             case 3:
-                Debug.Log("Card2 Player 2");
                 currentActiveVisualCardP2.enabled = false;
                 visualPlayerSelectors[(int)redBlueCards.card2Player2].GetComponent<Image>().enabled = true;
                 currentActiveVisualCardP2 = visualPlayerSelectors[(int)redBlueCards.card2Player2].GetComponent<Image>();
                 player2Selection = 1;
                 break;
             case 4:
-                Debug.Log("Card3 Player 1");
                 currentActiveVisualCardP1.enabled = false;
                 visualPlayerSelectors[(int)redBlueCards.card3Player1].GetComponent<Image>().enabled = true;
                 currentActiveVisualCardP1 = visualPlayerSelectors[(int)redBlueCards.card3Player1].GetComponent<Image>();
                 player1Selection = 2;
                 break;
             case 5:
-                Debug.Log("Card3 Player 2");
                 currentActiveVisualCardP2.enabled = false;
                 visualPlayerSelectors[(int)redBlueCards.card3Player2].GetComponent<Image>().enabled = true;
                 currentActiveVisualCardP2 = visualPlayerSelectors[(int)redBlueCards.card3Player2].GetComponent<Image>();

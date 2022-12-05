@@ -51,10 +51,36 @@ public class PlayerUpgrades : MonoBehaviour
 
     public Upgrade randomUpgrade()
     {
+        if (valid.Count == 0)
+        {
+            return null;
+        }
         int number = Random.Range(0, valid.Count);
         Upgrade upgrade = valid[number];
-        valid.RemoveAt(number);
+        //valid.RemoveAt(number);
         return upgrade;
+    }
+
+    public void removeNameFromValidList(string name)
+    {
+        for (int i = 0; i < valid.Count; i++)
+        {
+            if (valid[i].Name == name)
+            {
+                valid.RemoveAt(i);
+            }
+        }
+    }
+
+    public void removeNameFromDeckList(string name)
+    {
+        for (int i = 0; i < deck.Count; i++)
+        {
+            if (deck[i].Name == name)
+            {
+                deck.RemoveAt(i);
+            }
+        }
     }
 
     //holds the equipped upgrades
@@ -88,27 +114,27 @@ public class PlayerUpgrades : MonoBehaviour
 
     private static void InsElec()
     {
-        Debug.Log("insulated electronics");
+        //Debug.Log("insulated electronics");
     }
 
     private static void SeaCirc()
     {
-        Debug.Log("Sealed electronics");
+        //Debug.Log("Sealed electronics");
     }
 
     private static void Planted()
     {
-        Debug.Log("planted");
+        // Debug.Log("planted");
     }
 
     private static void Radio()
     {
-        Debug.Log("Radio");
+        //Debug.Log("Radio");
     }
 
     private static void ComEngi()
     {
-        Debug.Log("Combustion engine");
+        //Debug.Log("Combustion engine");
     }
 
     private void Start()
@@ -126,6 +152,7 @@ public class PlayerUpgrades : MonoBehaviour
         }
 
         loadData();
+        setupUpgrades();
     }
 
     public List<Upgrade> getValid()
@@ -145,7 +172,18 @@ public class PlayerUpgrades : MonoBehaviour
 
     private void loadData()
     {
-        FindObjectOfType<UpgradeSaver>().loadData(gameObject.tag);
+        List<Upgrade>[] data = FindObjectOfType<UpgradeSaver>().loadData(gameObject.tag);
+        valid = data[0];
+        deck = data[1];
+        upgrades = data[2];
+    }
+
+    private void setupUpgrades()
+    {
+        foreach(Upgrade upgrade in upgrades)
+        {
+            upgrade.setup();
+        }
     }
 
 }

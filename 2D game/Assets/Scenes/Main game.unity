@@ -20233,6 +20233,10 @@ MonoBehaviour:
   - {fileID: 1080515206}
   - {fileID: 669250901}
   - {fileID: 1224671429}
+  cardGOs:
+  - {fileID: 1562994985}
+  - {fileID: 1277673384}
+  - {fileID: 868354355}
   visualPlayerSelectors:
   - {fileID: 1329502096}
   - {fileID: 1492861015}
