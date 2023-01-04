@@ -316,7 +316,7 @@ public class GameManager : MonoBehaviour
                         gameOn = false;
                         FindObjectOfType<Player>().GameOn = gameOn;
                         FindObjectOfType<Player2>().GameOn = gameOn;
-                        OnRaceOver();
+                        OnRaceOver?.Invoke();
                         return;
                     }
 

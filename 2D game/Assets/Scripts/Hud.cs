@@ -42,6 +42,9 @@ public class Hud : MonoBehaviour
     //the name of the player's game object 
     public string playerName;
 
+    [SerializeField]
+    private GameObject restartButton;
+
     #endregion
 
     #region properties
@@ -200,6 +203,9 @@ public class Hud : MonoBehaviour
 
         //enable the appropriate visual elements
         gameOverTextMesh.enabled = true;
+
+        //enable the restart button
+        restartButton.SetActive(true);
     }
 
     //sets the countdown textMesh to a number
