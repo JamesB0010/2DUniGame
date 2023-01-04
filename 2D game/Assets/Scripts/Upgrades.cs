@@ -45,5 +45,6 @@ public class Upgrades: MonoBehaviour
     static private void Planted()
     {
         Debug.Log("Upgrade Planted");
+        Debug.Log("change");
     }
 }
